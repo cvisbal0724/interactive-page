@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords"
+        content="​Lessons &amp;amp; Practice, ​Meet some of our partners!, ​Integrity. Uniqueness. Enjoyment. Ever Forward., ​Our Mission, Contact Us">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <meta name="description" content="">
+    <title>FORTALECER LA COMPRENSIÓN LECTORA PARA MEJORAR LOS RESULTADOS DE LAS PRUEBAS TYT EN LOS APRENDICES SENAS</title>    
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <style>
+        
+        .background-div {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            background-color: #0b7bde;
+            background-image: url(background.jpeg);
+        }
+
+        .abs {
+            position: absolute;
+            width: 100px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .abs:hover {
+            z-index: 10001;
+            color: white;
+            border-style: dotted;
+        }
+
+        .abs p {
+            font-size: 11px;
+            font-family: 'arial';
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .abs img {
+            width: 40px;
+            /* position: absolute; */
+        }
+
+        .i-1 {
+            color: #dce51d;
+            right: 1245px;
+            top: 60%;
+        }
+
+        .i-2 {
+            right: 1095px;
+            color: #dce51d;
+            top: 50%;
+        }
+
+        .i-3 {
+            right: 945px;
+            color: #dce51d;
+            top: 40%;
+        }
+
+        .i-4 {
+            right: 795px;
+            color: #dce51d;
+            top: 30%;
+        }
+
+        .i-5 {
+            right: 645px;
+            color: #dce51d;
+            top: 20%;
+        }
+
+        .i-6 {
+            right: 495px;
+            color: #dce51d;
+            top: 30%;
+        }
+
+        .i-7 {
+            right: 345px;
+            color: #dce51d;
+            top: 40%;
+        }
+
+        .i-8 {
+            right: 185px;
+            color: #dce51d;
+            top: 50%;
+        }
+
+        .i-9 {
+            right: 35px;
+            color: #dce51d;
+            top: 60%;
+        }
+
+        .i-0 {
+            left: 50%;
+            margin-left: -11px;
+            color: #dce51d;
+            bottom: 10%;
+        }
+
+        .modal-background {
+            position: absolute;
+            background-color: gray;
+            opacity: 0.5;
+            z-index: 10002;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .modal-dialog {
+            width: 600px;
+            background-color: white;
+            z-index: 10003;
+            position: absolute;
+            height: 400px;
+            top: 50%;
+            left: 50%;
+            margin-left: -300px;
+            margin-top: -200px;
+            border-radius: 10px;
+        }
+        
+        .modal-content {
+            display: none;
+        }
+
+        .disabled i, .disabled p  {
+            color: #b7b4b4;
+            cursor: not-allowed;
+        }
+
+    </style>
+    <script>
+        $(document).ready(function() {
+
+            $('.abs').click(function() {
+
+                if (!$(this).hasClass('disabled')) {
+                    $('img').fadeOut('speed');
+                    $('img', this).fadeIn('speed');
+                    $('.modal-content').fadeIn('speed');
+                    let id = Number($(this).attr('id')) + 1;
+                    $('#'+ id).removeClass('disabled');
+                }
+
+            });
+
+            $('#background').click(function() {
+                $('.modal-content').fadeOut('speed');
+            });
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="background-div">
+
+        <div id="1" class="abs disabled i-1">
+            <img style="display: none;" src="avatar.png">
+            <i class="fa fa-lightbulb-o fa-5x" aria-hidden="true"></i>
+            <p>RECONOCIMIENTO DEL CONTEXTO-POBLACIÓN</p>            
+        </div>
+
+        <div id="2" class="abs disabled i-2">
+            <img style="display: none;" src="avatar.png">
+            <i class="fa fa-cogs fa-5x " aria-hidden="true"></i>
+            <p>MODELO PEDAGOGICO SELECCIONADO</p>            
+        </div>
+
+        <div id="3" class="abs disabled i-3">
+            <img style="display: none;" src="avatar.png">
+            <i class="fa fa-pencil-square fa-5x " aria-hidden="true"></i>
+            <p>OBJETIVO DE APRENDIZAJE</p>            
+        </div>
+
+        <div id="4" class="abs disabled i-4">
+            <img style="display: none;" src="avatar.png">
+            <i class="fa fa-key fa-5x " aria-hidden="true"></i>
+            <p>ESCENARIOS Y HERRAMIENTAS PARA EL APRENDIZAJE</p>            
+        </div>
+
+        <div id="5" class="abs disabled i-5">
+            <img style="display: none;" src="avatar.png">
+            <i class="fa fa-list fa-5x " aria-hidden="true"></i>
+            <p>APERTURA</p>            
+        </div>
+
+        <div id="6" class="abs disabled i-6">
+            <img style="display: none;" src="avatar.png">
+            <i class="fa fa-hourglass fa-5x " aria-hidden="true"></i><br>
+            <p>DESARROLLO</p>            
+        </div>
+
+        <div id="7" class="abs disabled i-7">
+            <img style="display: none;" src="avatar.png">
+            <i class="fa fa-window-close-o fa-5x " aria-hidden="true"></i>
+            <p>CIERRE</p>            
+        </div>
+
+        <div id="8" class="abs disabled i-8">
+            <img style="display: none;" src="avatar.png">
+            <i class="fa fa-book fa-5x " aria-hidden="true"></i>
+            <p>ESTRATEGIAS DE AVELUACIÓN</p>            
+        </div>
+
+        <div id="9" class="abs disabled i-9">
+            <img style="display: none;" src="avatar.png">
+            <i class="fa fa-address-book fa-5x " aria-hidden="true"></i>
+            <p>REFERENTES BLIBLIOGRAFICOS</p>            
+        </div>
+
+        <div id="0" class="abs i-0">
+            <img src="avatar.png">
+            <i class="fa fa-arrow-up fa-5x" aria-hidden="true"></i>
+            <p>INICIO</p>            
+        </div>
+
+    </div>
+
+    <div id="modal-content" class="modal-content">
+        <div id="background" class="modal-background"></div>
+        <div class="modal-dialog"></div>
+    </div>
+</body>
+
+</html>
